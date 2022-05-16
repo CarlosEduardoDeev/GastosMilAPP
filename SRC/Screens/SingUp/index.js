@@ -18,7 +18,7 @@ export default function SingIn(){
             <Text style={styles.message}> Cria sua Conta !</Text>
         </Animatable.View>
 
-        <Animatable.View animation="fadeInDown" style={styles.containerForm}>
+        <Animatable.View animation="fadeInUp" style={styles.containerForm}>
             <Text style={styles.title}>Name</Text>
 
             <TextInput
@@ -38,21 +38,11 @@ export default function SingIn(){
                 style={styles.input}
             placeholder="Digite sua Senha"
             />
-              <Text style={styles.title}>Confirma Senha </Text>
-
-            <TextInput
-                style={styles.input}
-            placeholder="Digite sua Senha novamente"
-            />
 
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonTitle}> Criar</Text>
             </TouchableOpacity>
 
-
-            {/* <TouchableOpacity style={styles.buttonRegister} onPress={() => navigation.navigate('SingUp')}>
-                <Text style={styles.registerText}> Não possue uma conta, Cadastre-se</Text>
-            </TouchableOpacity> */}
 
 
         </Animatable.View>
@@ -78,12 +68,7 @@ const styles = StyleSheet.create({
         
         
     },
-    containerHeader:{
-        marginTop:"9%",
-        marginBottom:"8%"
-
-    },
-    message:{
+        message:{
         fontSize:28,
         color:"#fff",
         fontWeight:"bold",
