@@ -1,6 +1,8 @@
+
 import React from "react";
 import {View,StyleSheet,Text,StatusBar} from 'react-native'
 import Header from '../../Components/Header/index'
+
 
 
 
@@ -15,9 +17,9 @@ export default function Home(){
 
 }
 
+
 const styles = StyleSheet.create({
     container:{
         backgroundColor:'#fff'
     }
-
 })

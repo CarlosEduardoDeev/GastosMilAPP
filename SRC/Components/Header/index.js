@@ -1,3 +1,4 @@
+
 import React from "react";
 import {View,StyleSheet,Text,StatusBar,TouchableOpacity} from 'react-native'
 import {Feather} from '@expo/vector-icons'
@@ -52,3 +53,4 @@ const styles = StyleSheet.create({
     }
     
 })
+

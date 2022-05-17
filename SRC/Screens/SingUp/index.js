@@ -18,7 +18,9 @@ export default function SingIn(){
         </Animatable.View>
 
         <Animatable.View animation="fadeInUp" style={styles.containerForm}>
-            <Text style={styles.title}>Nome</Text>
+
+            <Text style={styles.title}>Name</Text>
+
 
             <TextInput
             style={styles.input}
@@ -30,20 +32,14 @@ export default function SingIn(){
             <TextInput
                 style={styles.input}
             placeholder="Digite sua Senha"
-            />
-            <Text style={styles.title}>Senha</Text>
 
-            <TextInput
-    
-                secureTextEntry="true"
-                style={styles.input}
-                placeholder="Digite sua Senha"
-            />
+>
 
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonTitle}> Criar</Text>
             </TouchableOpacity>
-          
+
+
 
 
         </Animatable.View>
@@ -58,6 +54,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#38a67e',
 
     },
+
     containerHeader:{
         marginTop:"5%",
         marginBottom:"%"
