@@ -31,9 +31,7 @@ export default function SingIn(){
 
             <TextInput
                 style={styles.input}
-            placeholder="Digite sua Senha"
-
->
+            placeholder="Digite sua Senha"/>
 
             <TouchableOpacity style={styles.button}>
                 <Text style={styles.buttonTitle}> Criar</Text>
