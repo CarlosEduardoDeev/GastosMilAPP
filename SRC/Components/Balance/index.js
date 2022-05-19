@@ -16,11 +16,11 @@ export default function Balance({saldos,gastos}) {
 
        </View>
 
-       <View style={styles.item} >
+     <View style={styles.item} >
 
             <Text style={styles.itemTitle}>Gastos</Text>
 
-            <View tyle={styles.content}>
+            <View style={styles.content}>
                 <Text style={styles.currencySymbol}>R$</Text>
                 <Text style={styles.expenses}>{gastos}</Text>
             </View>
