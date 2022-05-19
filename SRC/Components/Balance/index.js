@@ -16,7 +16,11 @@ export default function Balance({saldos,gastos}) {
 
        </View>
 
-     <View style={styles.item} >
+
+
+
+       <View style={styles.item} >
+
 
             <Text style={styles.itemTitle}>Gastos</Text>
 
@@ -25,7 +29,9 @@ export default function Balance({saldos,gastos}) {
                 <Text style={styles.expenses}>{gastos}</Text>
             </View>
 
-       </View>
+        </View>
+
+       
 
     </View>
   );
@@ -39,12 +45,12 @@ const styles = StyleSheet.create({
         paddingStart:18,
         paddingEnd:18,
         marginTop:-24,
-        marginEnd:14,
+        marginEnd:15,
         marginStart:14,
         borderRadius:10,
         paddingTop:22,
         paddingBottom:22,
-        zIndex:999
+
 
 
     },
@@ -59,7 +65,7 @@ const styles = StyleSheet.create({
     content:{
         flexDirection:'row',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
     },
     currencySymbol:{
         color:'#dadada',
