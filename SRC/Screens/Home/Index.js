@@ -4,6 +4,7 @@ import {View,StyleSheet,Text} from 'react-native'
 import Header from '../../Components/Header/index'
 import Balance from "../../Components/Balance/index"
 import FabButton from "../../Components/FAB/index"
+import { Modal,Button,IconButton, Colors,TextInput } from 'react-native-paper';
 
 
 
@@ -13,6 +14,22 @@ import FabButton from "../../Components/FAB/index"
 
 export default function Home(){
 
+    const [openmodel,setOpenModal] = useState(false)
+
+
+    const showModal = () => setVisible(true);
+    const hideModal = () => setVisible(false);
+    const containerStyle = 
+    {backgroundColor: 'white', 
+    padding: 20, 
+    width:300,
+    height:500,
+    alignItems:'center',
+    alignSelf:'center'
+
+ };
+
+    
    
 
 
@@ -24,7 +41,15 @@ export default function Home(){
             <Balance saldos='5000' gastos='4000'/>
             <Text style={styles.title} >últimas atualizações</Text>
 
-            <FabButton  active={() => openmodel(true)} />
+            <Modal style={styles.modal} visible={openmodel} onDismiss={hideModal} contentContainerStyle={containerStyle}>
+
+               
+                <TextInput label="Tipo de gasto" mode='outlined'  />
+                <IconButton icon="check-circle" color={Colors.green500} size={30} onPress={() => setOpenModal(false)}/>
+
+            </Modal>
+
+            <FabButton  active={ () => setOpenModal(true)} />
         </View>
     )
 
@@ -32,6 +57,7 @@ export default function Home(){
 
 
 const styles = StyleSheet.create({
+
     container:{
         flex:1,
         backgroundColor:'#fafafa'
